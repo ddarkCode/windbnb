@@ -20,13 +20,9 @@ function App() {
       return { ...prevState, [name]: value };
     });
   };
-  const filteredData = data.filter(
-    (item) =>
-      item.city.toLowerCase().includes(inputs.location.toLowerCase()) ||
-      item.country.toLowerCase().includes(inputs.location.toLowerCase())
+  const filteredData = data.filter((item) =>
+    item.city.toLowerCase().includes(inputs.location.toLowerCase())
   );
-
-  console.log('Filtered: ', filteredData);
 
   return (
     <>
