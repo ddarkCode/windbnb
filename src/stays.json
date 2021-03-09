@@ -134,17 +134,6 @@
   {
     "city": "Turku",
     "country": "Finland",
-    "superHost": false,
-    "title": "Turku Nordic Home near city center",
-    "rating": 4.24,
-    "maxGuests": 5,
-    "type": "Entire apartment",
-    "beds": 3,
-    "photo": "https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjE3MzYxfQ&auto=format&fit=crop&w=2253&q=80"
-  },
-  {
-    "city": "Turku",
-    "country": "Finland",
     "superHost": true,
     "title": "Nice 2 room apartment close to everything",
     "rating": 4.34,

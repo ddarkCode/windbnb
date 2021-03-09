@@ -1,21 +1,8 @@
-import { useState } from 'react';
 import { ReactComponent as WindLogo } from '../assets/logo.svg';
 import { ReactComponent as SearchLogo } from '../assets/search-24px.svg';
 import './Headers.css';
 
-const Header = () => {
-  const [inputs, setInputs] = useState({
-    location: '',
-    addGuest: '',
-  });
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setInputs((prevState) => {
-      return { ...prevState, [name]: value };
-    });
-  };
-
+const Header = ({ inputs, onChange }) => {
   return (
     <nav>
       <div className='navigation'>
@@ -26,11 +13,11 @@ const Header = () => {
           <input
             className='search-input'
             type='search'
-            placeholder='Helsinki, Finland'
+            placeholder='Search City'
             aria-label='Search'
             name='location'
             value={inputs.location}
-            onChange={handleChange}
+            onChange={onChange}
           />
 
           <input
@@ -40,7 +27,7 @@ const Header = () => {
             aria-label='Search'
             name='addGuest'
             value={inputs.addGuest}
-            onChange={handleChange}
+            onChange={onChange}
           />
           <button type='submit'>
             <SearchLogo />

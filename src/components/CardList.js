@@ -1,3 +1,5 @@
+import { ReactComponent as PlusLogo } from '../assets/plus-solid.svg';
+
 import Card from './Card';
 
 import './CardList.css';
@@ -7,7 +9,10 @@ const CardList = ({ data }) => {
     <div>
       <div className='stays'>
         <h2>Stays In Finland</h2>
-        <span className='span'>{data.length} Stays</span>
+        <span className='span'>
+          {data.length}
+          <PlusLogo className='plus' /> Stays
+        </span>
       </div>
       <div className='card-list'>
         {data.map((items) => {

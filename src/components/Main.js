@@ -1,10 +1,7 @@
-import { useState } from 'react';
-import jsonData from '../stays.json';
 import CardList from './CardList';
 import './Main.css';
 
-const Main = () => {
-  const [data, setData] = useState(jsonData);
+const Main = ({ data }) => {
   return (
     <div className='main'>
       <CardList data={data} />
