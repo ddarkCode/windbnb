@@ -1,0 +1,28 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.span {
+  display: block;
+}
+
+.stays {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .stays {
+    display: flex;
+    flex-direction: column;
+  }
+}
